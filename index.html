@@ -1,0 +1,279 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INMOBILIARIA GRUPO RAÍZ</title>
+
+    <meta name="description" content="Terrenos, casas, condominios y locales comerciales en Honduras.">
+
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- LOGOS -->
+    <header class="header-logos">
+        <img src="imgportada/logo-grupo-raiz.jpg" alt="Grupo Raíz" class="logo">
+        <img src="imgportada/logo-marylin-sabillon.jpg" alt="Marylin Sabillón" class="logo-secundario">
+    </header>
+
+    <!-- PORTADA PRINCIPAL -->
+    <section class="hero">
+        <h1>Encuentra el lugar donde tu futuro echa raíces</h1>
+
+        <p>
+            Te acompañamos a dar el siguiente paso. Explora nuestra selección exclusiva
+            de terrenos, viviendas, condominios y locales comerciales en las mejores 
+            zonas de Honduras.
+        </p>
+
+        <p>
+            Ya sea que busques tu próximo hogar o una inversión estratégica, nuestro equipo
+            de asesores expertos gestiona todo el proceso para encontrar la propiedad a la
+            medida de tus metas.
+        </p>
+
+        <a href="#propiedades" class="btn" id="btnVerPropiedades"
+           onclick="mostrarTodasLasPropiedades(event)">
+            Explorar Propiedades
+        </a>
+    </section>
+
+    <!-- PROPIEDADES -->
+    <section id="propiedades">
+        <h2>Propiedades Destacadas</h2>
+
+        <div class="contenedor-propiedades">
+
+            <!-- BAIA OMOA: DESTACADA -->
+            <div class="tarjeta destacada">
+                <img src="imgportada/omoa-portada.jpg" alt="BAIA OMOA">
+
+                <div class="info">
+                    <h3>BAIA OMOA</h3>
+                    <p>Condominios frente al mar</p>
+                    <p class="precio">Desde $356,000 USD</p>
+
+                    <button onclick="abrirGaleria('omoa')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- ALARA OMOA: DESTACADA -->
+            <div class="tarjeta destacada">
+                <img src="imgportada/cortes-portada.jpg" alt="ALARA OMOA">
+
+                <div class="info">
+                    <h3>ALARA OMOA</h3>
+                    <p>The spirit of the sea, made home</p>
+                    <p class="precio">$325,000 - $675,000 USD</p>
+
+                    <button onclick="abrirGaleria('alara')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- MARSELLA: DESTACADA -->
+            <div class="tarjeta destacada">
+                <img src="imgportada/marsella-portada.jpg" alt="Marsella">
+
+                <div class="info">
+                    <h3>Marsella</h3>
+                    <p>240.28 m² de construcción</p>
+                    <p class="precio">$375,000 USD Negociable</p>
+
+                    <button onclick="abrirGaleria('marsella')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- TERRENO EN TELA -->
+            <div class="tarjeta propiedad-extra">
+                <img src="imgportada/terreno-tela-portada.jpg" alt="Terreno en Tela">
+
+                <div class="info">
+                    <h3>Terreno en Tela</h3>
+                    <p>1,749.00 m² | 2,508.52 V²</p>
+                    <p class="precio">L 15.5 MM Negociable</p>
+
+                    <button onclick="abrirGaleria('tela')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- JARDINES DEL ESTE -->
+            <div class="tarjeta propiedad-extra">
+                <img src="imgportada/jardines-portada.jpg" alt="Jardines del Este">
+
+                <div class="info">
+                    <h3>Jardines del Este</h3>
+                    <p>128 m² de construcción</p>
+                    <p class="precio">L 4.5 MM - L 6 MM</p>
+
+                    <button onclick="abrirGaleria('jardines')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- BODEGAS EXPOLOGISTIC II -->
+            <div class="tarjeta propiedad-extra">
+                <img src="imgportada/bodegas-portada.jpg" alt="Bodegas Expologistic II">
+
+                <div class="info">
+                    <h3>Bodegas Expologistic II</h3>
+                    <p>357 m²</p>
+                    <p class="precio">Venta / Alquiler Negociable</p>
+
+                    <button onclick="abrirGaleria('bodegas')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- HIBISCUS -->
+            <div class="tarjeta propiedad-extra">
+                <img src="imgportada/milla-portada.jpg" alt="Hibiscus Milla 5">
+
+                <div class="info">
+                    <h3>Hibiscus - Milla 5 Omoa</h3>
+                    <p>11,503.11 V²</p>
+                    <p class="precio">$575,155.50 USD Negociable</p>
+
+                    <button onclick="abrirGaleria('hibiscus')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- PANORAMA II -->
+            <div class="tarjeta propiedad-extra">
+                <img src="imgportada/panorama-portada.jpg" alt="Panorama II">
+
+                <div class="info">
+                    <h3>Panorama II</h3>
+                    <p>Condominios en renta</p>
+                    <p class="precio">$1,850 - $2,100 USD</p>
+
+                    <button onclick="abrirGaleria('panorama')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+            <!-- ALTEZZA SPS -->
+            <div class="tarjeta propiedad-extra">
+                <img src="imgportada/altezza-portada.jpg" alt="ALTEZZA SPS">
+
+                <div class="info">
+                    <h3>ALTEZZA SPS</h3>
+                    <p>245 - 500 V²</p>
+                    <p class="precio">Desde $287,000 USD</p>
+
+                    <button onclick="abrirGaleria('altezza')">
+                        Ver Detalles
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GALERÍA MODAL -->
+    <div class="modal" id="modal">
+        <div class="contenido-modal">
+
+            <span class="cerrar" onclick="cerrarGaleria()">&times;</span>
+
+            <div class="galeria-container">
+                <button class="flecha izquierda" onclick="anterior()" aria-label="Imagen anterior">
+                    &#10094;
+                </button>
+
+                <img id="imagenGaleria" src="" alt="Galería de imágenes">
+
+                <button class="flecha derecha" onclick="siguiente()" aria-label="Imagen siguiente">
+                    &#10095;
+                </button>
+            </div>
+
+            <div class="contador" id="contador"></div>
+
+            <div class="descripcion">
+                <h2 id="tituloPropiedad">Propiedad</h2>
+
+                <div id="infoPropiedad"></div>
+
+                <br>
+
+                <a id="btnWhatsapp" href="#" target="_blank"
+                   rel="noopener noreferrer" class="btnWhatsapp">
+                    📱 Contactar por WhatsApp
+                </a>
+
+                <a id="btnCorreo" href="#" class="btnCorreo">
+                    📧 Enviar Correo
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>Hablar con un asesor</h3>
+
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/share/1EB7QM4xn8/"
+               target="_blank" rel="noopener noreferrer">
+                <img src="img/Facebook.jpg" alt="Facebook">
+            </a>
+
+            <a href="https://www.instagram.com/gruporaiz.hn?exln=MWRqZWZ6ajNodTRtbA=="
+               target="_blank" rel="noopener noreferrer">
+                <img src="img/Instagram.jpg" alt="Instagram">
+            </a>
+
+            <a href="https://www.tiktok.com/@gruporaizinmob?_r=1&_t=ZS-9Amff9gfYpw"
+               target="_blank" rel="noopener noreferrer">
+                <img src="img/Tiktok.jpg" alt="TikTok">
+            </a>
+
+            <a href="https://wa.me/50433528723"
+               target="_blank" rel="noopener noreferrer">
+                <img src="img/Whatsapp.jpg" alt="WhatsApp">
+            </a>
+
+            <a href="mailto:gruporaizsderldecv@gmail.com">
+                <img src="img/Gmail.jpg" alt="Correo electrónico">
+            </a>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/50433528723"
+       target="_blank" rel="noopener noreferrer"
+       class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <img src="img/Whatsapp.jpg" alt="" class="whatsapp-logo">
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/script.js"></script>
+
+</body>
+<audio id="miAudio" loop>
+  <source src="audio/mimusica.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  document.addEventListener("click", function() {
+    document.getElementById("miAudio").play();
+  });
+</script>
+</html>
